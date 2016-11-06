@@ -1,0 +1,94 @@
+.jumbotron{
+	background: url("BG4_blurred.jpg");
+	background-size: 100% 100%;
+	color: #ffffff !important;
+	padding: 200px !important;
+	margin-bottom: 0px;
+}
+
+.container-fluid{
+    padding: 60px 50px;
+}
+
+.sign-up{
+	background-color: #ff8800;
+	border: none;
+	border-radius: 30px;
+	font-size: 18px;
+	padding: 15px;
+	margin-top: 25px;
+	color: white;
+}
+
+.sign-up:hover{
+	background-color: #ff8000;
+	box-shadow: 2px 2px 5px #ff4000;
+}
+
+.sign-up:focus{
+	outline: none;
+}
+
+.bg-grey1{
+	background: #f2f2f2;
+}
+
+.bg-grey2{
+	background: #e6e6e6;
+}
+
+.circle-cell{
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 150px;
+	color: white;
+	background-color: #ff6633;
+}
+
+.circle{
+	margin: 0px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.circle h3{
+	margin: 0px;
+}
+
+.team{
+	text-align: center;
+}
+
+.pic{
+	height: 256px;
+	width: 256px;
+	border-radius: 128px;
+	cursor: pointer;
+}
+
+.team .bio{
+	display: none;
+}
+
+.team:hover .bio{
+	display: inline;
+}
+
+#senior_d_table{
+	width: 100%;
+}
+
+.row-odd{
+	color: white;
+	background-color: black;
+}
+
+.row-even{
+	color: black;
+	background-color: white;
+}

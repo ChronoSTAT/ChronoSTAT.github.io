@@ -1,0 +1,217 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+	<title>CPE 423 Group 04</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fancy_style.css">
+	<link rel="stylesheet" href="./datatables/DataTables-1.10.12/css/jquery.datatables.min.css">
+	<script src="./jquery-3.1.0.min.js"></script>
+	<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="./datatables/datatables.min.js"></script>
+	<script src="./reports.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+		<h1>Know Your Body, Live Free</h1>
+		<button class="sign-up" data-toggle="modal" data-target="#signup-modal">SIGN UP</button>
+	</div>
+	
+	<div class="container-fluid bg-grey1">
+		<div class="row text-center">
+			<div class="col-sm-4">
+				<div class="circle-cell">
+					<div class="circle">
+						<h3><i class="fa fa-heartbeat"></i> Learn</h3> 
+						<p>...Your Body's Biorhythms</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="circle-cell">
+					<div class="circle">
+						<h3><i class="fa fa-warning"></i> Detect</h3> 
+						<p> ...When Something's Wrong</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="circle-cell">
+					<div class="circle">
+						<h3><i class="fa fa-heart"></i> Don't Die</h3> 
+						<p> ...yay</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-grey2"><div class="row">
+			<div class="col-sm-12 text-center">
+				<h3>Our Mission</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 text-center">
+				<p>To Boldly Go...</p>
+			</div>
+			<div class="col-sm-4 text-center">
+				<p>...Where No Man...</p>
+			</div>
+			<div class="col-sm-4 text-center">
+				<p>...Has Gone Before</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-grey1">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Who Are We?</h3>
+				<span>lorem ipsum</span>
+			</div>
+			<div class="col-sm-2 team">
+				<img class="pic" src="blank-avatar.png" />
+				<p><b>Allison Butler</b></p>
+				<p class="bio">[insert bio here plz thx]</p>
+			</div>
+			<div class="col-sm-2 team">
+				<img class="pic" src="blank-avatar.png" />
+				<p><b>Asher de Mesa</b></p>
+				<p class="bio">[insert bio here plz thx]</p>
+			</div>
+			<div class="col-sm-2 team">
+				<img class="pic" src="blank-avatar.png" />
+				<p><b>Joseph DeMartino</b></p>
+				<p class="bio">[insert bio here plz thx]</p>
+			</div>
+			<div class="col-sm-2 team">
+				<img class="pic" src="blank-avatar.png" />
+				<p><b>Martha Nakashian</b></p>
+				<p class="bio">[insert bio here plz thx]</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-grey2">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Senior Design Course Materials</h3>
+			</div>
+			<div class="col-sm-8">
+				<table id="senior_d_table" class="display">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Due Date</th>
+							<th>Report Type</th>
+							<th>Download</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Report 0</td>
+							<td>09/19/2016</td>
+							<td>Weekly Report</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+						<tr>
+							<td>Report 1</td>
+							<td>09/26/2016</td>
+							<td>Weekly Report</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+						<tr>
+							<td>Report 2</td>
+							<td>10/03/2016</td>
+							<td>Weekly Report</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+						<tr>
+							<td>Report 3</td>
+							<td>10/10/2016</td>
+							<td>Weekly Report</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-grey1">
+		<div class="row">
+			<div class="col-sm-8">
+				<table id="tg_table" class="display">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Due Date</th>
+							<th>Document Type</th>
+							<th>Download</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Gantt Chart</td>
+							<td>09/19/2016</td>
+							<td>Chart</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+						<tr>
+							<td>Stakeholders</td>
+							<td>09/26/2016</td>
+							<td>Table</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+						<tr>
+							<td>Work Breakdown</td>
+							<td>10/03/2016</td>
+							<td>Chart</td>
+							<td><a href=""><i class="fa fa-download"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-sm-4 text-right">
+				<h3>Technogenesis Course Materials</h3>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-grey2">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1>Contant us!!</h1>
+				<p>[insert contact info here]</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="signup-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Sign Up!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Enter your email address to receive updates!</p>
+					<form id="email-form">
+						Email Address:<br>
+						<input type="text" name="e-addr"><br>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="sign-up" data-dismiss="modal">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

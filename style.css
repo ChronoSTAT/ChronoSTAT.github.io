@@ -1,0 +1,56 @@
+body{
+	background-image: url("BG4_blurred.jpg");
+	background-size: 100% 100%;
+}
+
+.title-page{
+ 	background-color: #0099e6; 
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+}
+
+.sign-up{
+	background-color: #ff8800;
+	border: none;
+	border-radius: 20px;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 5px;
+	color: white;
+}
+
+.sign-up:hover{
+	background-color: #ff8000;
+	box-shadow: 2px 2px 5px #ff4000;
+}
+
+.bubble-cell {
+	margin-top: 50px;
+}
+
+.bubble{
+	text-align: center;
+	background-color: #006699;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	margin: 0 auto;
+	color: white;
+	font-size: 36px;
+}
+
+.bubble:hover{
+	background-color: #00334d;
+	box-shadow: 5px 5px 10px #002233;
+	cursor: pointer;
+}
+
+.bubble p{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}

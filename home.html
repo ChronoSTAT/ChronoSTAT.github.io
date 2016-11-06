@@ -1,0 +1,61 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+	<title>CPE 423 Group 04</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="./jquery-3.1.0.min.js"></script>
+	<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	
+</head>
+	
+<body>
+	<div class="container">
+		<div class="jumbotron title-page">
+			<h1><b>Know Your Body, Live Free</b></h1>
+			<button class="sign-up" data-toggle="modal" data-target="#signup-modal">SIGN UP</button>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 bubble-cell">
+				<div class="bubble">
+					<p>Learn</p>
+				</div>
+			</div>
+			<div class="col-sm-4 bubble-cell">
+				<div class="bubble">
+					<p>Detect</p>
+				</div>
+			</div>
+			<div class="col-sm-4 bubble-cell">
+				<div class="bubble">
+					<p>Prevent</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="signup-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Sign Up!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Enter your email address to receive updates!</p>
+					<form id="email-form">
+						Email Address:<br>
+						<input type="text" name="e-addr"><br>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="sign-up" data-dismiss="modal">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
