@@ -1,10 +1,15 @@
-$('#nav').affix({
-      offset: {
-        top: $('header').height()
-      }
-});	
 
 $(document).ready(function () {
+	var h = $('header').height();
+	$('.navbar-default').attr("data-offset-top",h);
+	
+	alert($('.navbar-default').attr("data-offset-top"));
+	$('#nav').affix({
+		offset: {
+			top: h
+		}
+	})
+	
 	$("#senior_d_table").DataTable( {
 			paging: false,
 			scrollY: 400,
