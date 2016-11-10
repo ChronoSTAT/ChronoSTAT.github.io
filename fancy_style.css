@@ -92,3 +92,10 @@
 	color: black;
 	background-color: white;
 }
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}

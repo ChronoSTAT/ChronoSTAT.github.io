@@ -1,3 +1,9 @@
+$('#nav').affix({
+      offset: {
+        top: $('header').height()
+      }
+});	
+
 $(document).ready(function () {
 	$("#senior_d_table").DataTable( {
 			paging: false,

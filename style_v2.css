@@ -1,0 +1,87 @@
+/* 
+	Dark 0f0f0f
+	Light efffc8
+	Main 63b297
+	Highlight ffba49
+	Neutral 7e9181
+ */
+
+ .navbar{
+	 margin-bottom: 0;
+ }
+ 
+ .header-wrap{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+ }
+ 
+ .header{
+	 background-color: #63b297;
+	 color: white;
+	 height:480px;
+ }
+  
+ .btn-sm{
+	background-color: #ffb133;
+	border: none;
+	border-radius: 20px;
+	font-size: 12px;
+	padding: 10px;
+	margin: 0 auto;
+	color: white;
+ }
+ 
+.btn-lg{
+	background-color: #ffb133;
+	border: none;
+	border-radius: 30px;
+	font-size: 18px;
+	padding: 15px;
+	color: white;
+}
+
+.btn:hover{
+	background-color: #ff9d00;
+	box-shadow: 2px 2px 5px #ff4000;
+	color: white;
+}
+
+.btn:focus{
+	outline: none;
+	color: white;
+}
+
+.bg-grey1{
+	background: #efffc8;
+	height:1480px;
+}
+
+.bg-grey2{
+	background: #f8ffe6;
+}
+
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:280px;
+    background-color:#eee;
+}
+
+#htext{
+	margin-top: 0;
+}
+
+.affix {
+	top: 0;
+    width: 100%;
+	z-index: 10;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
