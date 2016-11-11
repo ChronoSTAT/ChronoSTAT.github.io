@@ -54,11 +54,10 @@
 
 .bg-grey1{
 	background: #efffc8;
-	height:1480px;
 }
 
 .bg-grey2{
-	background: #f8ffe6;
+	background: #7e9181;
 }
 
 /* bootstrap 3 helpers */
@@ -84,4 +83,28 @@ header {
 
 .affix + .container-fluid {
     padding-top: 70px;
+}
+
+/* Circle formatting */
+.circle-cell{
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 150px;
+	color: white;
+	background-color: #ffba49;
+}
+
+.circle{
+	margin: 0px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.circle h3{
+	margin: 0px;
 }
