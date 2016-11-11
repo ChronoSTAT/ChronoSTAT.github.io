@@ -15,7 +15,7 @@ $(document).ready(function () {
 		url: "table_data.json",
 		data: data,
 		success: function(data){
-			alert(data);
+			alert(data["Title"]);
 		}
 	});
 	$("#senior_d_table").DataTable( {
