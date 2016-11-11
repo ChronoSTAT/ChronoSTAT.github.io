@@ -13,14 +13,14 @@ $(document).ready(function () {
 	$.ajax({
 		dataType: "json",
 		url: "table_data.json",
-		data: stuff,
-		success: function(stuff){
+		data: res,
+		success: function(res){
 			$("#senior_d_table").DataTable( {
 			paging: false,
 			scrollY: 400,
 			searching: true,
 			ordering: true,
-			data: stuff,
+			data: res,
 			columnDefs: [
 			{
 				targets: [3], "width":"100px", class:"text-center", orderable:false
@@ -33,8 +33,7 @@ $(document).ready(function () {
 				{data: "Type"},
 				{data: "FileName"}
 			]
-		}
-	);
+		});
 		}
 	});
 	
