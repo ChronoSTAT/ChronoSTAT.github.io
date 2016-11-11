@@ -1,3 +1,12 @@
 [
-	{"Title":"Report 0","Date":"11/11/2016","Course":"CPE 423","Type":"Test Download","FileName":"./Reports/test.txt"}
+	{"Title":"Report 0","Date":"09/12/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_09122016_WeeklyStatusReport0.docx"},
+	{"Title":"Report 1","Date":"09/19/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_09192016_WeeklyStatusReport1.docx"},
+	{"Title":"Report 2","Date":"09/26/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_09262016_WeeklyStatusReport2.docx"},
+	{"Title":"Report 3","Date":"10/03/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_10032016_WeeklyStatusReport3.docx"},
+	{"Title":"Report 4","Date":"10/10/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_10102016_WeeklyStatusReport4.docx"},
+	{"Title":"Report 5","Date":"10/17/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_10172016_WeeklyStatusReport5.docx"},
+	{"Title":"Report 6","Date":"10/24/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_10242016_WeeklyStatusReport6.docx"},
+	{"Title":"Report 7","Date":"10/31/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_10312016_WeeklyStatusReport7.docx"},
+	{"Title":"Report 8","Date":"11/07/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_11072016_WeeklyStatusReport8.docx"},
+	{"Title":"Midterm Report","Date":"10/18/2016","Course":"CPE 423","Type":"Weekly Report","FileName":"./Reports/CPE423_Group04_10182016_MidtermReport.docx"}
 ]
