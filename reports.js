@@ -31,7 +31,11 @@ $(document).ready(function () {
 				{data: "Date"},
 				{data: "Course"},
 				{data: "Type"},
-				{data: "FileName"}
+				{data: null,
+					createdCell: function(td, cellData){
+						$(td).css("color", "red");
+					}
+				}
 			]
 		});
 		}
