@@ -21,11 +21,11 @@
 	 color: white;
 	 height:80vh;
 	 background-image: url('world-map-transparent.svg');
-	 background-color: #63b297;
+	 background-color: #bfbfbf;
  }
   
  .btn-sm{
-	background-color: #ffb133;
+	background-color: #4d4d4d;
 	border: none;
 	border-radius: 20px;
 	font-size: 12px;
@@ -35,7 +35,7 @@
  }
  
 .btn-lg{
-	background-color: #ffb133;
+	background-color: #4d4d4d;
 	border: none;
 	border-radius: 30px;
 	font-size: 18px;
@@ -44,8 +44,8 @@
 }
 
 .btn:hover{
-	background-color: #ff9d00;
-	box-shadow: 2px 2px 5px #ff4000;
+	background-color: #404040;
+	box-shadow: 2px 2px 5px #333333;
 	color: white;
 }
 
@@ -55,11 +55,11 @@
 }
 
 .bg-grey1{
-	background: #efffc8;
+	background: #e6e6e6;
 }
 
 .bg-grey2{
-	background: #7e9181;
+	background: #d9d9d9;
 }
 
 /* bootstrap 3 helpers */
@@ -96,7 +96,7 @@ header {
 	margin: 0 auto;
 	border-radius: 25vh;
 	color: white;
-	background-color: #ffba49;
+	background-color: #4d4d4d;
 }
 
 .circle{
@@ -113,9 +113,12 @@ header {
 }
 
 .circle-cell:hover{
-	background-color: #ff9d00;
+	background-color: #404040;
 }
 
+.circle-cell:hover .details{
+	display: block;
+}
 .bubble-row{
 	padding: 5vh;
 }

@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 	//code for sticky navigation bar//
 	var h = $('header').height();
