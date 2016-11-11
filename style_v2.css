@@ -17,9 +17,10 @@
  }
  
  .header{
-	 background-color: #63b297;
 	 color: white;
 	 height:80vh;
+	 background-image: url('world-map-transparent.svg');
+	 background-color: #63b297;
  }
   
  .btn-sm{
