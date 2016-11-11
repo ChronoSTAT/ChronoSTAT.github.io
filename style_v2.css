@@ -6,25 +6,34 @@
 	Neutral 7e9181
  */
 
- .navbar{
+ .vcenter{
+	margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)	 
+ }
+ 
+.navbar{
 	 margin-bottom: 0;
  }
  
- .header-wrap{
+.header-wrap{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	
  }
- 
- .header{
+
+.header{
 	 color: white;
 	 height:80vh;
 	 background-image: url('world-map-transparent.svg');
 	 background-color: #bfbfbf;
  }
   
- .btn-sm{
+.btn-sm{
 	background-color: #4d4d4d;
 	border: none;
 	border-radius: 20px;
@@ -116,9 +125,6 @@ header {
 	background-color: #404040;
 }
 
-.circle-cell:hover .details{
-	display: block;
-}
 .bubble-row{
 	padding: 5vh;
 }
