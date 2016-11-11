@@ -33,13 +33,8 @@ $(document).ready(function () {
 				{data: "Type"},
 				{data: null,
 					createdCell: function(td, cellData){
-						var a = document.createElement("a");
-						var i = document.createElement("i");
-						i.attr("class","fa fa-download");
-						a.href = cellData;
-						a.download = true;
-						a.appendChild(i);
-						td.appendChild(a);
+						var a = "<a href=\"" + cellData + "\" download><i class=\"fa fa-download\"></i></a>";
+						td.innerHTML = a;
 					}
 				}
 			]
