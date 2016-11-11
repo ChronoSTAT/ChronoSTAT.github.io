@@ -31,7 +31,7 @@ $(document).ready(function () {
 				{data: "Date"},
 				{data: "Course"},
 				{data: "Type"},
-				{data: null,
+				{data: "FileName",
 					createdCell: function(td, cellData){
 						var a = "<a href=\"" + cellData + "\" download><i class=\"fa fa-download\"></i></a>";
 						td.innerHTML = a;
