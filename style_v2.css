@@ -87,11 +87,11 @@ header {
 
 /* Circle formatting */
 .circle-cell{
-	width: 20vw;
-	height: 20vw;
+	width: 50vh;
+	height: 50vh;
 	text-align: center;
 	margin: 0 auto;
-	border-radius: 10vw;
+	border-radius: 25vh;
 	color: white;
 	background-color: #ffba49;
 }
