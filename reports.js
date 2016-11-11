@@ -15,12 +15,11 @@ $(document).ready(function () {
 		url: "table_data.json",
 		data: data,
 		success: function(data){
-			for (var x in data[0]){
-				alert(data[0][x]);
-			}
+			
 		}
 	});
-	$("#senior_d_table").DataTable( {
+$("#senior_d_table").DataTable( {
+			"ajax":"table_data.json",
 			paging: false,
 			scrollY: 400,
 			searching: true,
@@ -31,7 +30,19 @@ $(document).ready(function () {
 			}
 			]
 		}
-	);
+	);	
+	// $("#senior_d_table").DataTable( {
+			// paging: false,
+			// scrollY: 400,
+			// searching: true,
+			// ordering: true,
+			// columnDefs: [
+			// {
+				// targets: [3], "width":"100px", class:"text-center", orderable:false
+			// }
+			// ]
+		// }
+	// );
 	$("#tg_table").DataTable( {
 			paging: false,
 			scrollY: 400,
