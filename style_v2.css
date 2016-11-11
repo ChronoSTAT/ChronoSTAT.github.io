@@ -71,8 +71,9 @@ header {
     background-color:#eee;
 }
 
-#htext{
+.htext{
 	margin-top: 0;
+	color: white;
 }
 
 .affix {
