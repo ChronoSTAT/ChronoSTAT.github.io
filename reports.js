@@ -15,8 +15,8 @@ $(document).ready(function () {
 		url: "table_data.json",
 		data: data,
 		success: function(data){
-			for (var x in data){
-				alert(data[x]);
+			for (var x in data[1]){
+				alert(data[1][x]);
 			}
 		}
 	});
