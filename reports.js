@@ -13,24 +13,31 @@ $(document).ready(function () {
 	$.ajax({
 		dataType: "json",
 		url: "table_data.json",
-		data: data,
-		success: function(data){
-			
-		}
-	});
-$("#senior_d_table").DataTable( {
-			"ajax":"table_data.json",
+		data: stuff,
+		success: function(stuff){
+			$("#senior_d_table").DataTable( {
 			paging: false,
 			scrollY: 400,
 			searching: true,
 			ordering: true,
+			data: stuff,
 			columnDefs: [
 			{
 				targets: [3], "width":"100px", class:"text-center", orderable:false
 			}
+			],
+			columns: [
+				{data: "Title"},
+				{data: "Date"},
+				{data: "Course"},
+				{data: "Type"},
+				{data: "FileName"}
 			]
 		}
-	);	
+	);
+		}
+	});
+	
 	// $("#senior_d_table").DataTable( {
 			// paging: false,
 			// scrollY: 400,
