@@ -9,7 +9,7 @@ $(document).ready(function () {
 	})
 	
 	//get data for table
-	var data;
+	var res;
 	$.ajax({
 		dataType: "json",
 		url: "table_data.json",
