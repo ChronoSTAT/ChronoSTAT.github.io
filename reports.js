@@ -8,6 +8,16 @@ $(document).ready(function () {
 		}
 	})
 	
+	//get data for table
+	var data;
+	$.ajax({
+		dataType: "json",
+		url: "table_data.json",
+		data: data,
+		success: function(data){
+			alert(data);
+		}
+	});
 	$("#senior_d_table").DataTable( {
 			paging: false,
 			scrollY: 400,
