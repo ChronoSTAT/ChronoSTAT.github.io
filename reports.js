@@ -23,7 +23,7 @@ $(document).ready(function () {
 			data: res,
 			columnDefs: [
 			{
-				targets: [3], "width":"100px", class:"text-center", orderable:false
+				targets: [4], "width":"100px", class:"text-center", orderable:false
 			}
 			],
 			columns: [
@@ -33,7 +33,13 @@ $(document).ready(function () {
 				{data: "Type"},
 				{data: null,
 					createdCell: function(td, cellData){
-						$(td).css("color", "red");
+						var a = document.createElement("a");
+						var i = document.createElement("i");
+						i.addClass("fa fa-download");
+						a.href = cellData;
+						a.download = true;
+						a.appendChild(i);
+						td.appendChild(a);
 					}
 				}
 			]
