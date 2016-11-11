@@ -1,9 +1,8 @@
 
 $(document).ready(function () {
+	//code for sticky navigation bar//
 	var h = $('header').height();
 	$('.navbar-default').attr("data-offset-top",h);
-	
-	alert($('.navbar-default').attr("data-offset-top"));
 	$('#nav').affix({
 		offset: {
 			top: h
