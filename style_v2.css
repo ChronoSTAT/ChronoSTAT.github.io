@@ -87,17 +87,17 @@ header {
 
 /* Circle formatting */
 .circle-cell{
-	width: 300px;
-	height: 300px;
+	width: 20vw;
+	height: 20vw;
 	text-align: center;
 	margin: 0 auto;
-	border-radius: 150px;
+	border-radius: 10vw;
 	color: white;
 	background-color: #ffba49;
 }
 
 .circle{
-	margin: 0px;
+	margin: 0;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -107,4 +107,8 @@ header {
 
 .circle h3{
 	margin: 0px;
+}
+
+.bubble-row{
+	padding: 5vh;
 }
