@@ -35,7 +35,7 @@ $(document).ready(function () {
 					createdCell: function(td, cellData){
 						var a = document.createElement("a");
 						var i = document.createElement("i");
-						i.addClass("fa fa-download");
+						i.attr("class","fa fa-download");
 						a.href = cellData;
 						a.download = true;
 						a.appendChild(i);
