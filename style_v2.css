@@ -100,7 +100,9 @@
 .bg-grey3{
 	background: #bfbfbf;
 }
-
+.textblock{
+	height: inherit;
+}
 /* bootstrap 3 helpers */
 
 .navbar-form input, .form-inline input {
