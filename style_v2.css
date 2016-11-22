@@ -74,6 +74,21 @@
 	color: white;
 }
 
+.nav>li>.pill {
+	background-color:#de541e;
+	color: white;
+}
+
+.nav>li>.pill:active{
+	background-color: #b44418;
+}
+
+.nav>li>.pill:hover,
+.nav>li>.pill:focus,
+.nav>li.active>.pill {
+	background-color: #b44418 !important;
+}
+
 .bg-grey1{
 	background: #ddeee8;
 }

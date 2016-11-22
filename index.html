@@ -26,8 +26,8 @@
 	</header>
 	
 	<div id="nav">
-<!-- 		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="480"> -->
-		<nav class="navbar navbar-default navbar-fixed-top">	
+<!-- 	<nav class="navbar navbar-default navbar-fixed-top">	 -->
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="480">	
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">ChronoSTAT</a>
@@ -81,19 +81,29 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4 vcenter text-center bg-grey3">
-				<h2 class="">The Problem</h2>
+			<div class="col-sm-4 text-center">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a class="pill" data-toggle="pill" href="#problem"><h1>The Problem</h1></a></li>
+					<li><a class="pill" data-toggle="pill" href="#solution"><h1>Our Solution</h1></a></li>
+					<li><a class="pill" data-toggle="pill" href="#who"><h1>Who Are We</h1></a></li>
+				</ul>
 			</div>
 			<div class="col-sm-8 text-center">
-				<h3>Physical Existance is Hard</h3>
-				<h4>Keeping up with your body is complicated</h4>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-sm-8">
-			</div>
-			<div class="col-sm-4">
-				<h2 class="">Our Solution</h2>
+				<div class="tab-content">
+					<div id="problem" class="tab-pane fade in active">
+						<h3>The Problem</h3>
+						<h6>Physical existance is hard.</h6>
+						<p>some text here</p>
+					</div>
+					<div id="solution" class="tab-pane fade">
+						<h3>Our Solution</h3>
+						<p>A wearable device that gets to know you</p>
+					</div>
+					<div id="who" class="tab-pane fade">
+						<h3>About Us</h3>
+						<p>We are engineering students at Stevens Institute of Technology</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
