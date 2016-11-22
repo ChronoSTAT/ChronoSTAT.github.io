@@ -12,6 +12,10 @@
 	de541e
  */
 
+ body{
+	 position: relative;
+ }
+ 
  .vcenter{
 	margin: 0;
     position: relative;
