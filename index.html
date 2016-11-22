@@ -14,7 +14,7 @@
 	<script src="./reports.js"></script>
 </head>
 
-<body <!-- data-spy="scroll" data-target=".navbar" -->>
+<body id="chronoSTAT" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header class="header text-center">
 		<div class="header-wrap">
 			<h1 class="htext">Know Your Body, Live Free</h1>
@@ -26,7 +26,8 @@
 	</header>
 	
 	<div id="nav">
-		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="480">
+<!-- 		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="480"> -->
+		<nav class="navbar navbar-default navbar-fixed-top">	
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">ChronoSTAT</a>
@@ -38,7 +39,7 @@
 				</a>	
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#About">About the Project</a></li>
+						<li><a href="#about">About the Project</a></li>
 						<li><a href="#updates">What's New</a></li>
 						<li><a href="#team">The Team</a></li>
 						<li><a href="#course">Course Materials</a></li>
@@ -52,7 +53,7 @@
 		</nav>
 	</div>
 	
-	<div class="container-fluid bg-grey2" id="About">		
+	<div class="container-fluid bg-grey2" id="about">		
 		<div class="row text-center bubble-row">
 			<div class="col-sm-4">
 				<div class="circle-cell">
@@ -115,7 +116,7 @@
 				</p>
 			</div>
 			<div class="col-sm-2">
-				<img class="headshot" src="blank-avatar.png" />
+				<img class="headshot" src="./bios/allison_headshot.jpg" />
 				<h4>Allison</h4>
 			</div>
 			<div class="col-sm-2">
@@ -161,6 +162,7 @@
 			</div>
 			<div class="col-sm-6">
 				<h2>Contact Us!</h2>
+				<h4>Email us at: <a>ChronoSTAT.SIT@gmail.com</a></h4>
 			</div>
 		</div>
 	</div>
