@@ -17,12 +17,13 @@
  }
  
  .vcenter{
-	margin: 0;
+	height: auto%;
+/* 	margin: 0;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)	 
+    transform: translateY(-50%)	  */
  }
  
 .navbar{
@@ -79,6 +80,10 @@
 
 .bg-grey2{
 	background: #d9d9d9;
+}
+
+.bg-grey3{
+	background: #bfbfbf;
 }
 
 /* bootstrap 3 helpers */
