@@ -100,8 +100,13 @@
 .bg-grey3{
 	background: #bfbfbf;
 }
+
 .textblock{
 	height: inherit;
+}
+
+.white-text{
+	color: white;
 }
 /* bootstrap 3 helpers */
 
@@ -163,4 +168,22 @@ header {
 
 .headshot{
 	width: 100%;
+}
+
+footer {
+	background-color: #332424;
+	color: white;
+}
+
+footer a {
+	color:white;
+}
+
+footer a:hover {
+	color: #d9d9d9;
+	text-decoration: none;
+}
+
+.logo {
+	max-height: 30px;
 }
