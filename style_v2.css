@@ -63,6 +63,12 @@
 	color: white;
 }
 
+.btn {
+	background-color: #de541e;
+	border: none;
+	color: white;
+}
+
 .btn:hover{
 	background-color: #b44418;
 	box-shadow: 2px 2px 5px #333333;
@@ -184,6 +190,23 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.logo {
-	max-height: 30px;
+.navbar {
+	margin-bottom: 0;
+	background-color: #332424;
+	border: 0;
+	border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: white !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a{
+	color: #332424 !important;
+	background-color: #ebe0e0 !important;
+}
+
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+	color: #332424 !important;
 }

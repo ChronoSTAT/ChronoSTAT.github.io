@@ -15,13 +15,17 @@
 	<script src="./reports.js"></script>
 </head>
 
-<body>
+<body id="mypage" data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header class="header text-center" id="main">
 		<div class="header-wrap">
 			<h1 class="htext">Know Your Body, Live Free</h1>
-			<div class="btn-wrapper">
-				<button class="sign-up btn btn-lg" data-toggle="modal" data-target="#signup-modal">SIGN UP</button>
-			</div>
+			<form class="form-inline" method="post">
+				<div class="input-group">
+					<input type="email" class="form-control" size="40" placeholder="Email Address" required />
+					<div class="input-group-btn">
+						<button type="submit" class="btn">Sign Up!</button>
+					</div>
+			</form>
 		</div>
 	</header>
 	
@@ -37,7 +41,7 @@
 			<div class="collapse navbar-collapse" id="topnav">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#mission">About the Project</a></li>
-					<li><a href="#updates">Project Updates</a><li>
+					<li><a href="#updates">Project Updates</a></li>
 					<li><a href="#meet">The Team</a></li>
 					<li><a href="#course">Course Materials</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -46,7 +50,7 @@
 		</div>
 	</nav>
 	
-	<div class="container-fluid stripe1" id="mission">
+	<div id="mission" class="container-fluid stripe1">
 		<div class="row text-center">
 			<h1>Our Mission</h1>
 		</div>
