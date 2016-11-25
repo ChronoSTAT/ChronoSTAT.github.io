@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./font-awesome-4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style_v2.css">
+	<link rel="stylesheet" type="text/css" href="test_css.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 	<script src="./jquery-3.1.0.min.js"></script>
 	<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -14,46 +15,45 @@
 	<script src="./reports.js"></script>
 </head>
 
-<body id="chronoSTAT" data-spy="scroll" data-target=".navbar" data-offset="60">
-	<header class="header text-center">
+<body id="mypage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<header class="header text-center" id="main">
 		<div class="header-wrap">
 			<h1 class="htext">Know Your Body, Live Free</h1>
-			<div class="btn-wrapper">
-				<button class="sign-up btn btn-lg" data-toggle="modal" data-target="#signup-modal">SIGN UP</button>
-			</div>
+			<form class="form-inline" method="post">
+				<div class="input-group">
+					<input type="email" class="form-control" size="40" placeholder="Email Address" required />
+					<div class="input-group-btn">
+						<button type="submit" class="btn">Sign Up!</button>
+					</div>
+			</form>
 		</div>
-
 	</header>
 	
-	<div id="nav">
-<!-- 	<nav class="navbar navbar-default navbar-fixed-top">	 -->
-		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="480">	
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">ChronoSTAT</a>
-				</div>				      
-				<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>	
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#about">About the Project</a></li>
-						<li><a href="#updates">What's New</a></li>
-						<li><a href="#team">The Team</a></li>
-						<li><a href="#course">Course Materials</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><button class="sign-up btn-sm btn" data-toggle="modal" data-target="#signup-modal">SIGN UP</button></li>
-					</ul>
-				</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topnav">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand" href="#">ChronoSTAT
+				</a>
 			</div>
-		</nav>
-	</div>
+			<div class="collapse navbar-collapse" id="topnav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#mission">About the Project</a></li>
+					<li><a href="#updates">Project Updates</a></li>
+					<li><a href="#meet">The Team</a></li>
+					<li><a href="#course">Course Materials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	
-	<div class="container-fluid bg-grey2" id="about">		
+	<div id="mission" class="container-fluid stripe1">
+		<div class="row text-center">
+			<h1>Our Mission</h1>
+		</div>
 		<div class="row text-center bubble-row">
 			<div class="col-sm-4">
 				<div class="circle-cell">
@@ -80,80 +80,153 @@
 				</div>
 			</div>
 		</div>
-		<div class="row bg-grey3">
-			<div class="col-sm-4 text-center">
-				<ul class="nav nav-pills nav-stacked">
-					<li class="active"><a class="pill" data-toggle="pill" href="#problem"><h1>The Problem</h1></a></li>
-					<li><a class="pill" data-toggle="pill" href="#solution"><h1>Our Solution</h1></a></li>
-					<li><a class="pill" data-toggle="pill" href="#who"><h1>Who Are We</h1></a></li>
-				</ul>
+	</div>
+	
+	<div id="problem" class="container-fluid stripe2">
+		<div class="col-sm-4 text-center">
+			<h1>The Problem</h1>
+		</div>
+		<div class="col-sm-8">
+			<div class="row">
+				<div class="col-sm-10">
+					<h2>Physical existance is hard</h2>
+					<span>
+						Whether you suffer from a chronic illness, or just day-to-day life, our bodies are complicated.  
+						There's always more going on than meets the eye.
+					</span>
+				</div>
+				<div class="col-sm-2 text-center">
+					<i class="fa fa-5x fa-frown-o"></i>
+				</div>
 			</div>
-			<div class="col-sm-8 text-center textblock">
-				<div class="tab-content">
-					<div id="problem" class="tab-pane fade in active">
-						<h2 class="white-text">The Problem</h2>
-						<h4>Physical existance is hard.</h4>
-						<p>Whether you suffer from a chronic illness, or just day to day problems, finding patterns in your symptoms is never easy.
-						Sometimes medication affects your memory, or maybe you just don't feel well enough to keep track.  According to the <a target="_blank" href="http://www.cdc.gov/chronicdisease/overview/">CDC</a>
-						, chronic illnesses affect more than half of all adults in the US, making up more than 75% of all healthcare spending.
-						Getting an accurate diagnosis or effect treatment plan can take months, or even years, because it takes time to identify 
-						symptomatic patterns.</p>
-					</div>
-					<div id="solution" class="tab-pane fade">
-						<h2>Our Solution</h2>
-						<h4>A device that gets to know you</h4>
-						<p>A wearable device that gets to know you</p>
-					</div>
-					<div id="who" class="tab-pane fade">
-						<h2>About Us</h2>
-						<p>We are a team of engineering students from the Electrical and Computer Engineering Department Stevens Institute of Technology.
-						We believe that, as engineers, we are placed in a unique position to make the world a better place by finding solutions to problems
-						people face every day.</p>
-					</div>
+			<div class="row">
+				<div class="col-sm-10">
+					<h2>Bodies are complicated</h2>
+					<span>
+						Our bodies have a lot of moving parts, and sometimes they don't work
+						right.  Figuring out what's wrong can take a really long time.
+					</span>
+				</div>
+				<div class="col-sm-2 text-center">
+					<i class="fa fa-5x fa-medkit"></i>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10">
+					<h2>Keeping track of symptoms can be a huge task</h2>
+					<span>
+						Knowing you symptoms is usually key to finding underlying causes and finding
+						an effective treatment plan.  However, there are many obstacles with keeping
+						logs of symptoms, such as memory loss due to medication or just generally not
+						feeling well.
+					</span>
+				</div>
+				<div class="col-sm-2 text-center">
+					<i class="fa fa-5x fa-list"></i>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div id="updates" class="container-fluid bg-grey1">
-		<div class="row text-center">
-			<h2>Project Timelines</h2>
+	<div id="solution" class="container-fluid stripe3">
+		<div class="col-sm-4">
+			<h1>Our Solution</h1>
 		</div>
-		<div class="row text-center">
-			<h2>Updates (blog?)</h2>
+		<div class="col-sm-8">
+			<div class="row">
+				<div class="col-sm-10">
+					<h2>A Wearable Device</h2>
+					<span>
+						Multiple sensors combine to paint a more accurate picture of what's
+						going on.
+					</span>
+				</div>
+			</div>
+				<div class="col-sm-2 text-center">
+					<p>[insert nice icon here]</p>
+				</div>
+			<div class="row">
+				<div class="col-sm-10">
+					<h2>It gets to know you</h2>
+					<span>
+						Machine learning algorithms help find patterns in the data collected to
+						help you live better.
+					</span>
+				</div>
+				<div class="col-sm-2 text-center">
+					<i class="fa fa-5x fa-lightbulb-o"></i>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10">
+					<h2>A warning system that stays connected</h2>
+					<span>
+						A mobile app to 
+					</span>
+				</div>
+				<div class="col-sm-2 text-center">
+					<i class="fa fa-5x fa-exclamation-triangle"></i>
+				</div>
+			</div>
 		</div>
 	</div>
 	
-	<div id="team" class="container-fluid bg-grey2">
+	<div id="updates" class="container-fluid stripe2">
+		<p>progress is being made!!</p>
+	</div>
+	
+	<div id="timeline" class="container-fluid stripe3">
+		<p>this is where we stand on the timeline!!</p>
+	</div>
+	
+	<div id="meet" class="container-fluid stripe2">
+		<div class="row text-center">
+			<h1>Who are we?</h1>
+			<p>We are a team of engineering students from Stevens Institute of Technology.</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<a href="#allison" data-toggle="collapse">
+					<img src="./bios/allison_headshot.jpg" class="headshot" alt="Allison Butler">
+				</a>
+				<h3>Allison Butler</h3>
+				<div id="allison" class="collapse">
+					<p>[insert bio here]</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<a href="#asher" data-toggle="collapse">
+					<img src="blank-avatar.png" class="headshot" alt="Asher de Mesa">
+				</a>
+				<h3>Asher de Mesa</h3>
+				<div id="asher" class="collapse">
+					<p>[insert bio here]</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<a href="#joseph" data-toggle="collapse">
+					<img src="blank-avatar.png" class="headshot" alt="Joseph DeMartino">
+				</a>
+				<h3>Joseph DeMartino</h3>
+				<div id="joseph" class="collapse">
+					<p>[insert bio here]</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<a href="#martha" data-toggle="collapse">
+					<img src="blank-avatar.png" class="headshot" alt="Martha Nakashian">
+				</a>
+				<h3>Martha Nakashian</h3>
+				<div id="martha" class="collapse">
+					<p>[insert bio here]</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="course" class="container-fluid stripe3">
 		<div class="row text-center">
 			<div class="col-sm-4">
-				<h2>Meet the Team</h2>
-				<p class="bio">
-					[bio text will magically appear here]
-				</p>
-			</div>
-			<div class="col-sm-2">
-				<img class="headshot" src="./bios/allison_headshot.jpg" />
-				<h4>Allison Butler</h4>
-			</div>
-			<div class="col-sm-2">
-				<img class="headshot" src="blank-avatar.png" />
-				<h4>Asher de Mesa</h4>
-			</div>
-			<div class="col-sm-2">
-				<img class="headshot" src="blank-avatar.png" />
-				<h4>Joseph DeMartino</h4>
-			</div>
-			<div class="col-sm-2">
-				<img class="headshot" src="blank-avatar.png" />
-				<h4>Martha Nakashian</h4>
-			</div>
-		</div>
-	</div>
-	
-	<div id="course" class="container-fluid bg-grey1">
-		<div class="row text-center">
-		<div class="col-sm-4">
 				<h3>Senior Design Course Materials</h3>
 			</div>
 			<div class="col-sm-8">
@@ -172,36 +245,39 @@
 		</div>
 	</div>
 	
-	<div id="contact" class="container-fluid bg-grey2">
-		<div class="row text-center">
-			<div class="col-sm-6">
-				<h2>Follow Us!</h2>
-			</div>
-			<div class="col-sm-6">
-				<h2>Contact Us!</h2>
-				<h4>Email us at: <a>ChronoSTAT.SIT@gmail.com</a></h4>
+	<div id="contact" class="container-fluid stripe2">
+		<h1 class="text-center">Contact Us!</h1>
+		<div class="col-sm-4 text-center">
+			<h3>Follow us!</h3>
+			<p>Blog: [insert link to tumblr]</p>
+			<p>Store: [insert link to redbubble]</p>
+			<p>Facebook: [insert link to facebook]</p>
+		</div>
+		<div class="col-sm-8">
+			<div class="row">
+				<form>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" id="name" type="text" placeholder="Name" required> 
+					</div>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" id="email" type="email" placeholder="Email" required>
+					</div>
+					<textarea class="form-control" id="body" placeholder="Enter your message..." rows="3" required></textarea>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn pull-right" type="submit">Send Email!</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 	
-	<div id="signup-modal" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Sign Up!</h4>
-				</div>
-				<div class="modal-body">
-					<p>Enter your email address to receive updates!</p>
-					<form id="email-form">
-						Email Address:<br>
-						<input type="text" name="e-addr"><br>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="submit" class="sign-up btn btn-sm" data-dismiss="modal">Submit</button>
-				</div>
-			</div>
-		</div>
-	</div>
+	<footer class="text-center">
+		<br>
+		<br>
+		<a class="fa fa-chevron-up" href="#main"></a>
+		<br>
+		<br>
+	</footer>
 </body>
