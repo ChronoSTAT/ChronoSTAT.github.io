@@ -11,7 +11,11 @@
 	ffba49
 	de541e
  */
-
+ 
+.col-sm-4, .col-sm-6, .col-sm-2, .col-sm-8, .col-sm-10 {
+	margin: 25px 0;
+}
+ 
  body{
 	 position: relative;
  }
@@ -209,4 +213,12 @@ footer a:hover {
 .navbar-default .navbar-toggle{
 	border-color: transparent;
 	color: #332424 !important;
+}
+
+#this_is_the_problem{
+	font-size: 18px;
+}
+
+.icon-big{
+	font-size: 36px;
 }
